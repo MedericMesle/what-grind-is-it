@@ -10,17 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_30_142542) do
+ActiveRecord::Schema.define(version: 2022_03_30_150106) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "grinders", force: :cascade do |t|
     t.string "name"
-    t.string "maker"
     t.string "model"
+    t.string "maker"
     t.string "burr_type"
-    t.date "release"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
