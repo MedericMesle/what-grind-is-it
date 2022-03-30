@@ -1,13 +1,13 @@
-puts "Let's wake up the grinders"
+Grinder.destroy_all
 
-niche = Grinder.create(
+puts "Are you ready to ..... GRIND"
+
+grinder_1 = Grinder.new(
   name: "Niche",
-  maker: "Niche",
   model: "Niche Zero",
-  burr_type: "Conical",
-  release: "01-01-2019"
+  maker: "Niche Compagny",
+  burr_type: "Conical"
 )
+grinder_1.save
 
-niche.save
-
-puts "Let's grind the data"
+puts "Let's see what we are grinding"
