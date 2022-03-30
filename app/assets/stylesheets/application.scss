@@ -5,7 +5,8 @@
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
+// buggy line on import
+// @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Your CSS partials

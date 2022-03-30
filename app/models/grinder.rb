@@ -1,0 +1,2 @@
+class Grinder < ApplicationRecord
+end
