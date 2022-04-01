@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'grinds/index', to: 'grinds#index'
   get 'grinds/about', to: 'grinds#about'
+  get 'grinders/index', to: 'grinders#index'
 end

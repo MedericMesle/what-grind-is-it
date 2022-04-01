@@ -1,0 +1,14 @@
+<H3>Grinders</H3>
+
+<p>This is the current list of grinders in the data-base.</p>
+<p>As my plan for owning all grinders has not yet come to fruition, feel free to add your own.</p>
+
+<p>I do recommend you read up on the who too, consistency is really what would make this interesting.</p>
+
+<ul>
+  <% @grinders.each do |grinder| %>
+  <li>Name: <%= grinder.name %></li>
+  <li>Model: <%= grinder.model %></li>
+  <li>Burr type: <%= grinder.burr_type %></li>
+  <% end %>
+</ul>
