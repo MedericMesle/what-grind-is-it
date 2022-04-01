@@ -1,0 +1,13 @@
+<h3>Let's add your grinder</h3>
+
+<p>As we like to do things methodicaly, they are some required fields you'll need to fill.</p>
+
+<%= form_for(@grinder) do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :model %>
+  <%= f.text_field :model %>
+  <%= f.label :burr_type %>
+  <%= f.text_field :burr_type %>
+  <%= f.submit %>
+<% end %>
