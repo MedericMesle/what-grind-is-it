@@ -2,5 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get 'about', to: 'pages#about'
-  get 'grinds', to: 'grinds#index'
+  get 'grinds/index', to: 'grinds#index'
+  get 'grinds/about', to: 'grinds#about'
+  get 'grinders/index', to: 'grinders#index'
 end
